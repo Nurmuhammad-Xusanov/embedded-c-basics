@@ -11,8 +11,21 @@ int main(void) {
     // misol 2147483648 kiritlsa, javobda -2147483648 chiqadi
     // agar 2147483649 kiritlsa, javobda -2147483647 chiqadi
     //shu tarzda ketadi
-    printf("max value of signed int = %d", myvar2);
+    printf("max value of signed int = %d \n", myvar2);
     
+    //----------------FIXED AND FLOATING POINT----------
+    float a = 3.14;
+    double b = 0.1;
 
+    float var1 = 3.1415926535;
+    double var2 = 3.1415926535897;
+    long double var3 = 3.14159265358979323846;
+
+    printf("%d \n", sizeof(float));
+    printf("%d \n", sizeof(double));
+    printf("%d \n", sizeof(long double));
+    printf("%.16f \n", var1);
+    printf("%.16f \n", var2);
+    printf("%.21Lf \n", var3);
     return 0;
 }
