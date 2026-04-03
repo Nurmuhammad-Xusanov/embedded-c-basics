@@ -24,8 +24,10 @@ int main(void) {
     printf("%d \n", sizeof(float));
     printf("%d \n", sizeof(double));
     printf("%d \n", sizeof(long double));
-    printf("%.16f \n", var1);
+    printf("%.16f \n", var1); // . qilib kasr qismi belgilanadim 16 da kasr qismidan aniq 16ta raqam chiqaradi
+    // f float yoki double turidgi sonni chiqarish
+    //Ya'ni: var1 va var2 o‘zgaruvchilari double turida bo‘lsa, ularning kasr qismi 16 ta raqamgacha aniq chiqariladi.
     printf("%.16f \n", var2);
-    printf("%.21Lf \n", var3);
+    printf("%.21Lf \n", var3); // L qoyilgani long bolgani uchun long double yoki long float formatiga otish
     return 0;
 }
