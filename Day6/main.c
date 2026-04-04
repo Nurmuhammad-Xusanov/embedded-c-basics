@@ -14,5 +14,12 @@ int main(void) {
         printf("%s\n", strnatija);
     }
 
+    int a = 10, b = 4, c = 10;
+    printf("%d\n", a > b && a == c);
+    printf("%d\n", a < b || a == c);
+    printf("%d\n", !(a == c));
+
+
+
     return 0;
 }
