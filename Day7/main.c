@@ -41,5 +41,15 @@ int main(void) {
     printf("kerak hammasi bor\n");
   }
 
+  if(g & mask) { // hech bomaganda bitta mos bit borligini tekshiradi
+    printf("Hech bolmaganda bittasi bor\n");
+  }
+
+  int z = 6;
+  z = x | mask;
+  printf("%d\n", z); // 86 da ishqilib mask bilan bitlarni yoqayabdi
+
+  g = g | ~mask;
+  printf("%d\n", g);
   return 0;
 }
