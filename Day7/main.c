@@ -50,6 +50,9 @@ int main(void) {
   printf("%d\n", z); // 86 da ishqilib mask bilan bitlarni yoqayabdi
 
   g = g | ~mask;
-  printf("%d\n", g);
+  printf("%d\n", g); // mask bilan g dagi bitlarni o'chiryabdi
+  
+  
+  
   return 0;
 }
