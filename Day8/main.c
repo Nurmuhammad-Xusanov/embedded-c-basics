@@ -10,8 +10,11 @@ int main(void) {
 
 
     int c = 5;
-    
+
     printf("a << 1 = %d\n", a << 1);
     printf("a >> 1 = %d\n", a >> 1);
+
+    
     return 0;
 }
+
