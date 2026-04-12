@@ -24,10 +24,12 @@ int main(void) {
     printf("b = %d\n", b); // 0 00000000
 
     int c = 7;
+    int count = 0;
     while (c) {
         printf("c = %d\n", c);
         c = c & (c - 1);
+        count++;
     }
-    printf("Tugadi");
+    printf("Tugadi = %d\n", count);
     return 0;
 }
