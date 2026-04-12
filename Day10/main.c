@@ -23,5 +23,11 @@ int main(void) {
     b = b & (b - 1);
     printf("b = %d\n", b); // 0 00000000
 
+    int c = 7;
+    while (c) {
+        printf("c = %d\n", c);
+        c = c & (c - 1);
+    }
+    printf("Tugadi");
     return 0;
 }
