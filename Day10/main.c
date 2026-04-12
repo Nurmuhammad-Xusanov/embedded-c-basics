@@ -11,5 +11,17 @@ int main(void) {
     } else {
         printf("Juft son = %d\n", a);
     }
+
+    // n & (n - 1) eng o'ngdagi 1 bitni o'chiradi
+    int b = 7; // 00000111
+    
+    printf("b = %d\n", b); // 7 00000111
+    b = b & (b - 1);
+    printf("b = %d\n", b); // 6 00000110
+    b = b & (b - 1);
+    printf("b = %d\n", b); // 4 00000100
+    b = b & (b - 1);
+    printf("b = %d\n", b); // 0 00000000
+
     return 0;
 }
