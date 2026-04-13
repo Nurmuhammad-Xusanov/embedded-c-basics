@@ -25,8 +25,8 @@ int main(void) {
 
     int c = 7;
     int count = 0;
-    while (c) {
-        printf("c = %d\n", c);
+    while (c) { // Brain kernighan algorithm (Hamming weight)
+        printf("c = %d\n", c); // optional
         c = c & (c - 1);
         count++;
     }
