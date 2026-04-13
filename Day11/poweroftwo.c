@@ -14,6 +14,6 @@ int powerOfTwo(int block[], int block_size) {
 int main() {
     int myarr[] = {128, 256, 500, 512};
     int block_size = sizeof(myarr) / sizeof(myarr[0]);
-    printf("Shuncha 2 ning darajasi bor: %d", powerOfTwo(myarr, block_size));
+    printf("Shuncha 2 ning darajasi bor: %d\n", powerOfTwo(myarr, block_size));
     return 0;
 }
