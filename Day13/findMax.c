@@ -1,21 +1,16 @@
 #include <stdio.h>
 
-int findMax(int *a, int *b) {
-
-  if (a == NULL || b == NULL) {
-    return -1;
-  }
-
-  if (*a > *b) {
-    return *a;
-  } else {
-    return *b;
-  }
+int findMax(int *a, int *b, int *result) {
+    if (a == NULL || b == NULL || result == NULL) {
+        return -1;// error
+    }
+    *result = (*a > *b) ? *a : *b;
+    return 0;
 }
 
 int main(void) {
-  int c = 6, d = 5;
-  int natija = findMax(&c, &d);
-  printf("%d", natija);
+  int a = 6, b = 5, result;
+  findMax(&a, &b, &result);
+  printf("%d", result);
   return 0;
 }
