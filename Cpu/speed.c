@@ -11,8 +11,4 @@ int main() {
 
     clock_t end = clock();
 
-    double time_spent = (double)(end - start) / CLOCKS_PER_SEC;
-    printf("Time: %f seconds\n", time_spent);
-
-    return 0;
-}
+    double time_spent = (double)(en
